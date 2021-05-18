@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алёна Шестакова](https://up.htmlacademy.ru/htmlcss/31/user/1653061).
-* Наставник:[ `Семен Якушев`](https://htmlacademy.ru/profile/id1118791).
+* Наставник:[Семен Якушев](https://htmlacademy.ru/profile/id1118791).
 
 ---
 
