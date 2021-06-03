@@ -1,0 +1,360 @@
+/*
+root{
+  basic-black: #000000;
+  red:#FB565A;
+  red-hover: #E74246;
+  red-click: #D7373B;
+  green:#00CA74;
+  green-hover: #00BC6C;
+  green-click: #00AA62;
+  yellow:#EFC849;
+  yellow-hover: #EAB534;
+ yellow-click: #E5A722;
+grey: #FFFFFF;
+}
+*/
+
+body{
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+ /*navigation*/
+.main-navigation{
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 30px;
+ color: #000000;
+ background-color: #EEEEEE;
+}
+
+.main-header-logo{
+  position: absolute;
+  width: 159.87px;
+  height: 65.02px;
+  left: 131px;
+  top: 32.98px;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a,
+.site-navigation a{
+  color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #E74246;
+}
+
+.buy{
+  font-weight: 500;
+ font-size: 16px;
+ line-height: 30px;
+ color: #000000;
+}
+
+.buy a{
+  color: #000000;
+}
+
+.buy a:hover,
+.buy a:focus{
+  color: #E74246;
+}
+/*slaider*/
+.slaider{
+  background-color: #EEEEEE;
+}
+
+.slaider-list{
+  list-style: none;
+}
+.slaider-items{
+  text-align: left;
+}
+
+.slaider-items
+.subtitle{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slaider-items p{
+  font-size: 16px;
+line-height: 24px;
+}
+
+/*дизайн студия Нёрдс*/
+
+.services-list{
+  list-style: none;
+}
+
+/* .button{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+*/
+.web{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  width: 160px;
+  height: 50px;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.web:hover{
+  background: #E74246;
+}
+
+.divice{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  width: 160px;
+  height: 50px;
+  background: #00CA74;
+  border-radius: 3px;
+}
+
+.divice:hover{
+  background: #00BC6C;
+}
+
+.presentation{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  width: 160px;
+  height: 50px;
+  background: #EFC849;;
+  border-radius: 3px;
+}
+
+.presentation:hover{
+  background: #EAB534;
+}
+
+/*about-us"*/
+.about-us .subtitle{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.about-us-list{
+  list-style: none;
+}
+
+/*customers*/
+
+.custumers-list{
+  list-style: none;
+}
+
+/*footer*/
+
+.contacts-phone{
+  color: inherit;
+}
+
+.footer-social-list{
+  list-style: none;
+}
+
+.social-button{
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+}
+
+.social-button:hover{
+  background-color: #E74246;
+}
+
+.slogan{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+/*appointment*/
+
+.appointment-items input{
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #D7DCDE;
+}
+
+.appointment-items input:hover{
+  border: 2px solid #B4B9BB;
+}
+
+.appointment-items input:focus{
+  border: 2px solid #000000;
+}
+
+.appointment-text{
+  width: 760px;
+height: 118px;
+}
+
+.button{
+  width: 259px;
+  height: 50px;
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.button:hover{
+  background: #E74246;
+}
+
+
+/*CATALOG*/
+/*filter*/
+.filter
+.subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter-list{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.grid{
+  font-size: 16px;
+  line-height: 20px;
+}
+.grid
+.subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.grid-list{
+  list-style: none;
+}
+
+.grid-items{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.characteristic-list{
+  list-style: none;
+}
+
+.characteristic
+.subtitle{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.characteristic-items{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-show{
+  font: inherit;
+  text-align: center;
+  width: 260px;
+  height: 50px;
+  background: #EEEEEE;
+  border-radius: 3px;
+  border: none;
+}
+
+.button-show:hover{
+  background: #DFDFDF;
+}
+
+/*готовые шаблоны*/
+.catalog-list{
+  list-style: none;
+}
+
+.catalog-items{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.popup{
+  background: #EEEEEE;
+}
+
+.desc{
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*страницы каталога*/
+a{
+  text-decoration: none;
+}
+
+.pagination-list{
+  list-style: none;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+}
+
+.pagination-items a:hover {
+  background: #DFDFDF;
+}
+
+.pagination-items a:active {
+  background: #ffffff;
+}
