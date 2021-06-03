@@ -1,18 +1,24 @@
-/*
-root{
-  basic-black: #000000;
-  red:#FB565A;
-  red-hover: #E74246;
-  red-click: #D7373B;
-  green:#00CA74;
-  green-hover: #00BC6C;
-  green-click: #00AA62;
-  yellow:#EFC849;
-  yellow-hover: #EAB534;
- yellow-click: #E5A722;
-grey: #FFFFFF;
+
+:root{
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --background-grey: #EEEEEE;
+  --basic-red:#FB565A;
+  --red-hover: #E74246;
+  --red-activ: #D7373B;
+  --basic-green:#00CA74;
+  --green-hover: #00BC6C;
+  --green-activ: #00AA62;
+  --basic-yellow:#EFC849;
+  --yellow-hover: #EAB534;
+  --yellow-activ: #E5A722;
+  --basic-grey: #E1E1E1;
+  --grey-hover: #DFDFDF;
+  --grey-activ: #D5D5D5;
+  --grey-quiet-form: #D7DCDE;
+  --grey-hover-form: #B4B9BB;
 }
-*/
+
 
 body{
   min-width: 960px;
@@ -22,9 +28,9 @@ body{
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: var(--basic-black);
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 
 a{
@@ -40,8 +46,8 @@ img{
  font-weight: 500;
  font-size: 16px;
  line-height: 30px;
- color: #000000;
- background-color: #EEEEEE;
+ color: var(--basic-black);
+ background-color: var(--basic-white);
 }
 
 .main-header-logo{
@@ -58,32 +64,40 @@ img{
 
 .site-navigation a,
 .site-navigation a{
-  color: black;
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus{
-  color: #E74246;
+  color: var(--red-hover);
+}
+
+.site-navigation a:active{
+  color: var(--red-activ);
 }
 
 .buy{
   font-weight: 500;
  font-size: 16px;
  line-height: 30px;
- color: #000000;
+ color: var(--basic-black);
 }
 
 .buy a{
-  color: #000000;
+  color: var(--basic-black);
 }
 
-.buy a:hover,
-.buy a:focus{
-  color: #E74246;
+.buy:hover,
+.buy:focus{
+  color: var(--red-hover);
+}
+
+.buy:active{
+  color: var(--red-activ);
 }
 /*slaider*/
 .slaider{
-  background-color: #EEEEEE;
+  background-color: var(--background-grey);
 }
 
 .slaider-list{
@@ -120,57 +134,68 @@ line-height: 24px;
   border: none;
 }
 */
-.web{
+.red-button{
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
   width: 160px;
   height: 50px;
-  background: #FB565A;
+  background: var(--basic-red);
   border-radius: 3px;
 }
 
-.web:hover{
-  background: #E74246;
+.red-button:hover{
+  background: var(--red-hover);
 }
 
-.divice{
+.red-button:active{
+  background: var(--red-activ);
+}
+
+.green-button{
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
   width: 160px;
   height: 50px;
-  background: #00CA74;
+  background: var(--basic-green);
   border-radius: 3px;
 }
 
-.divice:hover{
-  background: #00BC6C;
+.green-button:hover{
+  background: var(--green-hover);
 }
 
-.presentation{
+.green-button:active{
+  background: var(--green-activ);
+}
+
+.yellow-buttton{
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
   width: 160px;
   height: 50px;
-  background: #EFC849;;
+  background: var(--basic-yellow);
   border-radius: 3px;
 }
 
-.presentation:hover{
-  background: #EAB534;
+.yellow-buttton:hover{
+  background: var(--yellow-hover);
 }
 
+.yellow-buttton:active{
+  background: var(--yellow-activ);
+}
 /*about-us"*/
 .about-us .subtitle{
   font-weight: 500;
@@ -201,11 +226,15 @@ line-height: 24px;
   width: 81px;
   height: 81px;
   border-radius: 50%;
-  background-color: #E1E1E1;
+  background-color: var(--basic-grey);
 }
 
 .social-button:hover{
-  background-color: #E74246;
+  background-color: var(--red-hover);
+}
+
+.social-button:active{
+  background: var(--red-activ);
 }
 
 .slogan{
@@ -218,17 +247,20 @@ line-height: 24px;
 .appointment-items input{
   font: inherit;
   background-color: transparent;
-  border: 2px solid #D7DCDE;
+  border: 2px solid var(--grey-quiet-form);
 }
 
 .appointment-items input:hover{
-  border: 2px solid #B4B9BB;
+  border: 2px solid var(--grey-hover-form);
 }
 
-.appointment-items input:focus{
-  border: 2px solid #000000;
+.appointment-items input:active{
+  border: 2px solid var(--basic-black);
 }
 
+.appointment-items input:default{
+  border: 2px solid var(--red-hover);
+}
 .appointment-text{
   width: 760px;
 height: 118px;
@@ -239,18 +271,21 @@ height: 118px;
   height: 50px;
   font: inherit;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-  background: #FB565A;
+  background: var(--basic-red);
   border-radius: 3px;
 }
 
 .button:hover{
-  background: #E74246;
+  background: var(--red-hover);
 }
 
+.button:active{
+  background: var(--red-activ);
+}
 
 /*CATALOG*/
 /*filter*/
@@ -310,13 +345,13 @@ height: 118px;
   text-align: center;
   width: 260px;
   height: 50px;
-  background: #EEEEEE;
+  background: var(--basic-grey);
   border-radius: 3px;
   border: none;
 }
 
 .button-show:hover{
-  background: #DFDFDF;
+  background: var(--green-hover);
 }
 
 /*готовые шаблоны*/
@@ -330,7 +365,7 @@ height: 118px;
   line-height: 30px;
 }
 .popup{
-  background: #EEEEEE;
+  background: var(--basic-grey);
 }
 
 .desc{
@@ -347,14 +382,23 @@ a{
 
 .pagination-list{
   list-style: none;
-  background-color: #EEEEEE;
+  background-color: var(--basic-grey);
   border-radius: 3px;
 }
 
-.pagination-items a:hover {
+.pagination-items a{
+  text-decoration: none;
+  color: var(--basic-black);
+  padding: 10px;
   background: #DFDFDF;
 }
 
+.pagination-items a:hover {
+  background: var(--grey-hover);
+  border: 2px solid #DFDFDF;
+}
+
 .pagination-items a:active {
-  background: #ffffff;
+  background: var(--basic-white);
+  border: 2px solid var(--grey-hover-form);
 }
