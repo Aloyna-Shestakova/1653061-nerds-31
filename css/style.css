@@ -20,7 +20,7 @@
 }
 
 
-body{
+.page-body{
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -31,6 +31,11 @@ body{
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-content: start;
 }
 
 a{
@@ -41,16 +46,21 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+
  /*navigation*/
 .main-navigation{
- font-weight: 500;
- font-size: 16px;
- line-height: 30px;
- color: var(--basic-black);
- background-color: var(--basic-white);
+  display: grid;
+  justify-content: stretch;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .main-header-logo{
+  justify-self: left;
   position: absolute;
   width: 159.87px;
   height: 65.02px;
@@ -58,7 +68,22 @@ img{
   top: 32.98px;
 }
 
+.main-header-bar{
+  background-color: var(--basic-grey);
+}
+
+.main-navigation-wrapper{
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: var(--basic-grey);
+}
+
 .site-navigation{
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -125,26 +150,21 @@ line-height: 24px;
   list-style: none;
 }
 
-/* .button{
+ .button{
   font: inherit;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-}
-*/
-.red-button{
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
   width: 160px;
   height: 50px;
-  background: var(--basic-red);
   border-radius: 3px;
+}
+
+.red-button{
+  color: var(--basic-white);
+  background: var(--basic-red);
+
 }
 
 .red-button:hover{
@@ -156,16 +176,8 @@ line-height: 24px;
 }
 
 .green-button{
-  font: inherit;
-  text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  width: 160px;
-  height: 50px;
   background: var(--basic-green);
-  border-radius: 3px;
 }
 
 .green-button:hover{
@@ -176,24 +188,16 @@ line-height: 24px;
   background: var(--green-activ);
 }
 
-.yellow-buttton{
-  font: inherit;
-  text-align: center;
+.yellow-button{
   color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-  width: 160px;
-  height: 50px;
   background: var(--basic-yellow);
-  border-radius: 3px;
 }
 
-.yellow-buttton:hover{
+.yellow-button:hover{
   background: var(--yellow-hover);
 }
 
-.yellow-buttton:active{
+.yellow-button:active{
   background: var(--yellow-activ);
 }
 /*about-us"*/
@@ -263,27 +267,26 @@ line-height: 24px;
 }
 .appointment-text{
   width: 760px;
-height: 118px;
+  height: 118px;
 }
 
-.button{
-  width: 259px;
-  height: 50px;
+.button-send{
   font: inherit;
   text-align: center;
-  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-  background: var(--basic-red);
+  width: 160px;
+  height: 50px;
   border-radius: 3px;
+  background: var(--basic-red);
 }
 
-.button:hover{
+.button-send:hover{
   background: var(--red-hover);
 }
 
-.button:active{
+.button-send:active{
   background: var(--red-activ);
 }
 
