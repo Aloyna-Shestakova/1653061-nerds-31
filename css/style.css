@@ -34,8 +34,7 @@
 
   min-height: 100%;
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  align-content: start;
+  grid-template: min-content 1fr min-content;
 }
 
 a{
@@ -145,9 +144,24 @@ line-height: 24px;
 }
 
 /*дизайн студия Нёрдс*/
+.services{
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+}
+
 
 .services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  margin-bottom: 121px;
+  padding: 0;
   list-style: none;
+}
+
+.services-items{
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
  .button{
@@ -201,6 +215,15 @@ line-height: 24px;
   background: var(--yellow-activ);
 }
 /*about-us"*/
+.about-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  margin-bottom: 73px;
+  padding: 0;
+  list-style: none;
+}
+
 .about-us .subtitle{
   font-weight: 500;
   font-size: 45px;
@@ -208,21 +231,51 @@ line-height: 24px;
 }
 .about-us-list{
   list-style: none;
+  margin-bottom: 73px;
+}
+.desc{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*customers*/
 
 .custumers-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
   list-style: none;
 }
 
+.custumers-items{
+text-align: center;
+outline: 5px solid rgba(0, 0, 255, 0.3);
+outline-offset: -5px;
+}
 /*footer*/
 
 .contacts-phone{
   color: inherit;
 }
 
+.footer-social-slogan{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .footer-social-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   list-style: none;
 }
 
@@ -306,7 +359,7 @@ line-height: 24px;
   list-style: none;
 }
 
-.grid{
+/*.grid{
   font-size: 16px;
   line-height: 20px;
 }
@@ -325,7 +378,7 @@ line-height: 24px;
   font-size: 16px;
   line-height: 20px;
 }
-
+*/
 .characteristic-list{
   list-style: none;
 }
