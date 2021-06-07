@@ -19,6 +19,9 @@
   --grey-hover-form: #B4B9BB;
 }
 
+.page{
+  height: 100%;
+}
 
 .page-body{
   min-width: 960px;
@@ -34,7 +37,8 @@
 
   min-height: 100%;
   display: grid;
-  grid-template: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a{
@@ -48,42 +52,50 @@ img{
 
 
  /*navigation*/
+ .main-header{
+   margin-bottom: 0;
+   outline: 5px solid rgba(0, 255, 0, 0.3);
+   outline-offset: -5px;
+ }
 .main-navigation{
+  margin-bottom: 0;
   display: grid;
-  justify-content: stretch;
+  grid-template-columns: min-content 1fr min-content;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
-}
-
-.main-header-logo{
-  justify-self: left;
-  position: absolute;
-  width: 159.87px;
-  height: 65.02px;
-  left: 131px;
-  top: 32.98px;
-}
-
-.main-header-bar{
   background-color: var(--basic-grey);
 }
 
 .main-navigation-wrapper{
   display: grid;
   grid-template-columns: 1fr min-content;
-  width: 940px;
+  width: 437px;
   margin: 0 auto;
   padding: 0 10px;
   background-color: var(--basic-grey);
 }
 
+.main-header-logo{
+  width: 159.87px;
+  height: 65.02px;
+  left: 131px;
+  top: 32.98px;
+  outline: 5px solid rgba(10, 255, 0, 0.3);
+   outline-offset: -5px;
+
+ }
+
+
 .site-navigation{
+
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+
 }
 
 .site-navigation a,
@@ -102,9 +114,11 @@ img{
 
 .buy{
   font-weight: 500;
- font-size: 16px;
- line-height: 30px;
- color: var(--basic-black);
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  outline: 5px solid rgba(0, 255, 225, 0.3);
+  outline-offset: -5px;
 }
 
 .buy a{
@@ -119,8 +133,12 @@ img{
 .buy:active{
   color: var(--red-activ);
 }
+
+
 /*slaider*/
 .slaider{
+  margin: 0;
+  padding: 0;
   background-color: var(--background-grey);
 }
 
@@ -145,6 +163,7 @@ line-height: 24px;
 
 /*дизайн студия Нёрдс*/
 .services{
+  margin-bottom: 121px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
@@ -152,8 +171,8 @@ line-height: 24px;
 .services-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
   margin: 0;
-  margin-bottom: 121px;
   padding: 0;
   list-style: none;
 }
@@ -162,6 +181,10 @@ line-height: 24px;
   text-align: center;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
+}
+
+.services-items p{
+  margin: 0 10px;
 }
 
  .button{
@@ -242,14 +265,21 @@ line-height: 24px;
 }
 
 /*customers*/
+.custumers{
+  width: 1159px;
+  outline: 5px solid rgba(255, 255, 0.3);
+}
 
 .custumers-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 120px;
+  padding: 0;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
+  outline-offset: rgb(0, 155, 0.3);
 }
 
 .custumers-items{
@@ -258,6 +288,11 @@ outline: 5px solid rgba(0, 0, 255, 0.3);
 outline-offset: -5px;
 }
 /*footer*/
+
+.main-footer{
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
 
 .contacts-phone{
   color: inherit;
