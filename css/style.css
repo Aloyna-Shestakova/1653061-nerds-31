@@ -41,6 +41,42 @@
   align-content: start;
 }
 
+.page-catalog{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+  outline: 5px solid rgba(255, 238, 0, 0.973);
+  outline-offset: -5px;
+}
+
+.page-title{
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 108px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-grey);
+  outline: 5px solid rgba(255, 0, 140, 0.973);
+  outline-offset: -5px;
+}
+
+
+.project-filter{
+  margin: 0;
+  padding: 0;
+  grid-column: 1/-1;
+  outline: 5px solid rgba(55, 0, 255, 0.973);
+  outline-offset: -5px;
+}
+
+.conteiner{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 a{
   text-decoration: none;
 }
@@ -380,6 +416,8 @@ outline-offset: -5px;
 
 /*CATALOG*/
 /*filter*/
+
+
 .filter
 .subtitle{
   font-weight: bold;
@@ -394,6 +432,10 @@ outline-offset: -5px;
   list-style: none;
 }
 
+.main-filter{
+  outline: 5px solid rgba(255, 145, 0, 0.973);
+  outline-offset: -5px;
+}
 /*.grid{
   font-size: 16px;
   line-height: 20px;
@@ -442,10 +484,17 @@ outline-offset: -5px;
 }
 
 .button-show:hover{
-  background: var(--green-hover);
+  background: var(--grey-hover);
 }
 
 /*готовые шаблоны*/
+
+.catalog{
+  margin-left: 140px;
+  outline: 5px solid rgba(255, 0, 0, 0.973);
+  outline-offset: -5px;
+}
+
 .catalog-list{
   list-style: none;
 }
