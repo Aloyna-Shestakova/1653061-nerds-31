@@ -35,23 +35,41 @@
     <section class="main-filter">
       <form class="filter" method="get" action="https//echo.htmlacademy.ru">
         <fieldset class="price">
-          <p class="subtitle">Стоимость</p>
-          <input class="range" type="range" min="0" max="15000" step="10" value="7500" id="price">
-          <label for="price">Стоимость</label>
+          <legend>стоимость</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 30%; margin-left: 20%;"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 10%;"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 10%;"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+            </div>
+          </div>
+
+          <!-- <p class="subtitle">Стоимость</p>
+          <input  class="range" type="range" min="0" max="15000" step="10" value="7500" id="price">
+          <label for="price">Стоимость</label> -->
         </fieldset>
         <fieldset class="grid">
           <legend class="subtitle">сетка</legend>
           <ul class="grid-list">
             <li class="grid-items">
-              <input class="adaptive" type="radio" name="adaptive" value="adaptive" id="filter-adaptive" checked>
+              <input class="visually-hidden filter-input-radio" class="adaptive" type="radio" name="adaptive"
+                value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="grid-items">
-              <input class="fixed" type="radio" name="fixed" value="fixed" id="filter-fixed">
+              <input class="visually-hidden filter-input-radio" class="fixed" type="radio" name="fixed" value="fixed"
+                id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="grid-items">
-              <input class="strech" type="radio" name="strech" value="strech" id="filter-strech">
+              <input class="visually-hidden filter-input-radio" class="strech" type="radio" name="strech" value="strech"
+                id="filter-strech">
               <label for="filter-strech">Резиновая</label>
             </li>
           </ul>
@@ -59,24 +77,26 @@
         <fieldset class="characteristic">
           <legend class="subtitle">особенности</legend>
           <ul class="characteristic-list">
-            <li class="characteristic-etems">
-              <input type="checkbox" name="slade" id="filter-slade" checked>
+            <li class="characteristic-items">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slade" id="filter-slade"
+                checked>
               <label for="filter-slade">Слайдер</label>
             </li>
             <li class="characteristic-items">
-              <input type="checkbox" name="bloc-advantage" id="filter-bloc-advantage">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bloc-advantage"
+                id="filter-bloc-advantage">
               <label for="filter-bloc-advantage">Блок преимуществ</label>
             </li>
             <li class="characteristic-items">
-              <input type="checkbox" name="news" id="filter-news" checked>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li class="characteristic-etems">
-              <input type="checkbox" name="gallery" id="filter-gallery">
+            <li class="characteristic-items">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галлерея</label>
             </li>
             <li class="characteristic-items">
-              <input type="checkbox" name="basket" id="filter-basket">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
