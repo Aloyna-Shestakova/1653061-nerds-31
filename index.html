@@ -18,10 +18,10 @@
       </a>
       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
-          <li><a href="blank.html">студия</a></li>
+          <li><a class="active-item" href="#">студия</a></li>
           <li><a href="blank.html">клиенты</a></li>
-          <li><a href="blank.html">магазин</a></li>
-          <li><a href="blank.html">контакт</a></li>
+          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="blank.html">контакты</a></li>
         </ul>
       </div>
       <div class="user-buy">
@@ -150,7 +150,7 @@
         <p class="contacts-address">
           наб. Реки Карповки, <br>
           5 лит П, Санкт-Петербург<br>
-          <span class="contacts-phone" ><a href="tel:+78005558628"> +7 800 555-86-28</a></span>
+          <span><a class="contacts-phone" href="tel:+78005558628"> +7 800 555-86-28</a></span>
         </p>
         <a class="button button-write" href="blank.html">Напишите нам</a>
       </div>
@@ -192,6 +192,7 @@
     <span class="visually-hidden">закрыть</span>
   </button>
   <form class="appointment-form" action="https//echo.htmlacademy.ru" method="post">
+    <div class="name-email">
     <p class="appointment-items name">
       <label class="appointment-name" form="appointment-name">Ваше имя:</label>
       <input class="appointment-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -201,6 +202,7 @@
       <input class="appointment-email" id="appointment-email" type="email" name="email"
         placeholder="email@example.com ">
     </p>
+  </div>
     <p class="appointment-items text">
       <label class="appointment-text" form="appointment-text">Текст письма:</label>
       <input class="appointment-text" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
